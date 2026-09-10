@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #64b151;
+    overflow: hidden;
+
+    display
+: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eyes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.eye {
+    width: 240px;
+    height: 140px;
+
+    background: white;
+
+    border: 5px solid #b12c2c;
+    border-radius: 50%;
+
+    position: relative;
+    overflow: hidden;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.ball {
+    width: 75px;
+    height: 75px;
+
+    background: #000;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    transition: transform 0.05s linear;
+}
+
+/* Small screen */
+@media (max-width: 650px) {
+
+    .eyes {
+        gap: 15px;
+    }
+
+    .eye {
+        width: 150px;
+        height: 95px;
+    }
+
+    .ball {
+        width: 50px;
+        height: 50px;
+    }
+}
